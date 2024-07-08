@@ -31,14 +31,26 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
     ```bash
     cp .env.example .env
     ```
+4. **Set up your database:**
+    Update the `.env` file with your database credentials:
+     ```env
+    
+      DB_CONNECTION=mysql
+      DB_HOST=127.0.0.1
+      DB_PORT=3306
+      DB_DATABASE=your_database_name
+      DB_USERNAME=your_username
+      DB_PASSWORD=your_password
 
-4. **Generate the code**
-
-    ```bash
-    php artisan serve
     ```
 
-5. **Set up a tunnel**
+5. **Run the migrations the database:**
+
+    ```bash
+    php artisan migrate
+    ```
+    
+6. **Set up a tunnel**
 
     ```bash
    ssh -R 80:localhost:8000 serveo.net
@@ -52,7 +64,7 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
     ```
 
 
-9. **Run the Telegram bot**
+8. **Run the Telegram bot**
 
     
     - https://t.me/messengerbek_bot
