@@ -1,8 +1,6 @@
     <?php
 
     use Illuminate\Support\Facades\Route;
-    use App\Http\Controllers\SendMessagesController;
-    use App\Http\Controllers\ReceiveMessagesController;
     use App\Http\Controllers\HomeController;
 
     /*
@@ -19,7 +17,7 @@
     Route::get('/', [HomeController::class , 'index']);
     Route::post('/send_message', [HomeController::class, 'store']);
     Route::post('/webhook/path', [HomeController::class, 'handle']);
-    Route::get('/', [HomeController::class, 'fetchLatestChatId']);
+    
 
     
 
