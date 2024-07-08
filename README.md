@@ -40,12 +40,13 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
 
 5. **Set up a tunnel**
 
-    - Put the link on terminal: **ssh -R 80:localhost:8000 serveo.net**
+    - Put the link on terminal:
+    - ```ssh -R 80:localhost:8000 serveo.net```
 
 6. **Configure webhook**
 
     - Insert the new link taken from Serveo.net and start on new terminal:
-    **curl -F "url=<PUBLIC_URL_SERVEO>/webhook/path" "https://api.telegram.org/bot7485923716:AAENIvrkYNBseZM8w5jNyl3ylbJQp3fLW2M/setWebhook"**
+    ```curl -F "url=<PUBLIC_URL_SERVEO>/webhook/path" "https://api.telegram.org/bot7485923716:AAENIvrkYNBseZM8w5jNyl3ylbJQp3fLW2M/setWebhook"```
 
 
 7. **Run the Telegram bot and the web page provided by Serveo.net service:**
