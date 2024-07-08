@@ -29,7 +29,7 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
 3. **Copy the `.env.example` file to `.env`:**
 
     ```bash
-    cp .env.example .env
+    copy .env.example .env
     ```
 4. **Serve the application:**
 
