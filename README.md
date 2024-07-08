@@ -16,7 +16,7 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
 1. **Clone the repository:**
 
     ```bash
-    git clone (https://github.com/DevBehruz/TG_bot_messenger.git)
+    git clone https://github.com/DevBehruz/TG_bot_messenger.git --branch masters
     cd TG_bot_messenger
     ```
 
