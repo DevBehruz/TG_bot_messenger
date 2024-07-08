@@ -15,45 +15,61 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
 
 1. **Clone the repository:**
 
-    ```
-    Download ZIP file of the project via this link:  
-    Extract the file and open it on VScode (recommended)
+    ```bash
+    git clone (https://github.com/DevBehruz/TG_bot_messenger.git)
+    cd TG_bot_messenger
     ```
 
 2. **Install dependencies:**
 
-    ```
-    composer install: https://getcomposer.org/download/
-    ```
-
-3. **Save the `laravel.sql` file from `\database\laravel.sql`:**
-
-    ```
-    Import the sql file via PhpMyAdmin;
+    ```bash
+    composer install
     ```
 
-4. **Generate the code**
+3. **Copy the `.env.example` file to `.env`:**
 
     ```bash
-    php artisan serve
+    cp .env.example .env
+    ```
+4. **Set up your database:**
+    Update the `.env` file with your database credentials:
+     ```env
+    
+      DB_CONNECTION=mysql
+      DB_HOST=127.0.0.1
+      DB_PORT=3306
+      DB_DATABASE=your_database_name
+      DB_USERNAME=your_username
+      DB_PASSWORD=your_password
+
     ```
 
-5. **Set up a tunnel**
+5. **Run the migrations the database:**
 
-    - Put the link on terminal: **ssh -R 80:localhost:8000 serveo.net**
-
-6. **Configure webhook**
-
-    - Insert the new link taken from Serveo.net and start on new terminal:
-    **curl -F "url=<PUBLIC_URL_SERVEO>/webhook/path" "https://api.telegram.org/bot7485923716:AAENIvrkYNBseZM8w5jNyl3ylbJQp3fLW2M/setWebhook"**
-
-
-7. **Run the Telegram bot and the web page provided by Serveo.net service:**
-
+    ```bash
+    php artisan migrate
     ```
+    
+6. **Set up a tunnel**
+
+    ```bash
+   ssh -R 80:localhost:8000 serveo.net
+    ```
+
+7. **Configure the webhook**
+
+    ```bash
+   curl -F "url=<PUBLIC_URL>/webhook/path"         
+   "https://api.telegram.org/bot7485923716:AAENIvrkYNBseZM8w5jNyl3ylbJQp3fLW2M/setWebhook"
+    ```
+
+
+8. **Run the Telegram bot**
+
+    
     - https://t.me/messengerbek_bot
 
-    ```
+    
 
 ## Usage
 
@@ -65,7 +81,5 @@ This is a Laravel project that integrates with the Telegram Bot API to send and 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
 
 
