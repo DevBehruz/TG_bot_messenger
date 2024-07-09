@@ -1,11 +1,11 @@
-* text=auto eol=lf
+# Language detection
+*.php linguist-detectable=true
+*.js linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true
 
-*.blade.php diff=html
-*.css diff=css
-*.html diff=html
-*.md diff=markdown
-*.php diff=php
+# Ignore vendor files
+/vendor/* linguist-vendored
 
-/.github export-ignore
-CHANGELOG.md export-ignore
-.styleci.yml export-ignore
+# Ignore node_modules files
+/node_modules/* linguist-vendored
