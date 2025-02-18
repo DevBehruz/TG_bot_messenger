@@ -1,4 +1,4 @@
-# Laravel Telegram Messenger Bot Project
+# Chat Bot built in Laravel and Telegram Bot API
 
 This is a Laravel project that integrates with the Telegram Bot API to send and receive messages.
 
